@@ -1,0 +1,15 @@
+# Ignoring virtual environment and python cache files
+__pycache__/
+joke-share/__pycache__/
+venv/
+# Ignoring instance path
+instance/
+# Ignoring database files
+*.db
+*.sqlite
+
+# Ignoring MS Word files
+*.docx
+
+# Utils
+.\utils\

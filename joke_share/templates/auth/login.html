@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<div>
+    {% for message in get_flashed_messages() %}
+    <div>
+        Error: {{ message }}
+    </div>
+    {% endfor %}
+</div>
+<form action="{{ url_for('auth.login') }}" method="post">
+    <div>
+        <label for="handle">Username or Email:</label>
+        <input type="text" name="handle" id="handle" placeholder="Username or email" required>
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Password" required>
+    </div>
+    <input type="submit" value="Log In">
+</form>
+{% endblock %}

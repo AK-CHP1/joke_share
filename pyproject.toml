@@ -1,0 +1,21 @@
+[project]
+name = "joke-share"
+version = "0.1"
+dependencies = [
+    "flask"
+]
+authors = [
+    {name = "Aayush Kumar", email = "aayushkumarfirst@gmail.com"}
+]
+maintainers = [
+    {name = "Aayush Kumar", email = "aayushkumarfirst@gmail.com"}
+]
+description = "A simple joke sharing platform"
+readme = "README.rst"
+
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["joke_share"]

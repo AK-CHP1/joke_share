@@ -1,0 +1,1 @@
+from joke_share.auth.auth import bp

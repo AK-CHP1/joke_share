@@ -1,0 +1,1 @@
+from joke_share.jokes.jokes import bp
